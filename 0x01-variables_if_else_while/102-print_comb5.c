@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -8,18 +9,33 @@
 int main(void)
 {
 
-int d;
-for (d = 0; d < 100; d++)
-{
-        putchar((d / 10) + '0');
-        putchar((d % 10) + '0');
+int num1, num2;
 
-if (d != 99)
+for (num1 = 0; num1 <= 98; num1++)
+
 {
-        putchar(',');
-        putchar(' ');
+
+for (num2 = num1 + 1; num2 <= 99; num2++)
+
+{
+
+putchar((num1 / 10) + '0');
+putchar((num1 % 10) + '0');
+putchar(' ');
+putchar((num2 / 10) + '0');
+putchar((num2 % 10) + '0');
+
+if (num1 == 98 && num2 == 99)
+
+continue;
+
+putchar(',');
+putchar(' ');
+
 }
+
 }
+
 putchar('\n');
 
 return (0);
