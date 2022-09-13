@@ -2,7 +2,7 @@
 /**
  * _isalpha - function that checks for alphabetic character
  * @c: input letrer
- * Rwturm: Always success
+ * Return: Always success
  */
 int _isalpha(int c)
 {
