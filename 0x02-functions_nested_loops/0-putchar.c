@@ -11,9 +11,12 @@ char *sh = "_putchar";
 
 while (*sh)
 {
+
 _putchar(*sh);
-sh++
+sh++;
+
 }
+
 _putchar('\n');
 
 return (0);
