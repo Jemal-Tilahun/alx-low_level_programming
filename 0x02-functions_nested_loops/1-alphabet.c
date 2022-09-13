@@ -1,9 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "main.h"
 /**
- * print_alphabet - print_alphabet - a function that prints the alphabet, in lowercase
+ * print_alphabet - print the alphabet
  *
  * Return: Always success
  */
@@ -14,9 +11,7 @@ int n;
 
 for (n = 'a'; n <= 'z'; n++)
 {
-
 _putchar(n);
-
 }
 _putchar('\n');
 }
