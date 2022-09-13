@@ -20,9 +20,10 @@ _putchar(n);
 
 }
 
-co++
+co++;
 
 _putchar('\n');
+
 }
 
 }
