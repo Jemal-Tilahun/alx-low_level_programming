@@ -25,7 +25,7 @@ if ((sum - 2772) % 2 != 0)
 diff_half1++;
 for (index = 0; psd[index]; index++)
 {
-if (psd[index] >= (33 + diff_hslf1))
+if (psd[index] >= (33 + diff_half1))
 {
 psd[index] -= diff_half1;
 break;
