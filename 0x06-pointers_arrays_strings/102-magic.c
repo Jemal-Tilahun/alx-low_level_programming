@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - function main
+ * Return: nothing
+ */
 int main(void)
 {
 int n;
@@ -10,10 +13,7 @@ a[2] = 1024;
 p = &n;
 /*
  * write your line of code here...
- * Remember:
  * - You are not allowed to use a
- * - You are not allowed to modify p
- * - only one statement
  * - You are not allowed to code anything
  */
 *(p + 5) = 98;
