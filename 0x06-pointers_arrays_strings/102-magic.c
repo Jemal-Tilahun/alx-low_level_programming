@@ -14,7 +14,7 @@ p = &n;
  * - You are not allowed to use a
  * - You are not allowed to modify p
  * - only one statement
- * - You are not allowed to code anything else than the line of expected line of code
+ * - You are not allowed to code anything
  */
 *(p + 5) = 98;
 /* ...so that this prints 98\n */
