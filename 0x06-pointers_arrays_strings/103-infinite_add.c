@@ -4,7 +4,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
 /**
  * add_strings - add the number stored on two strings
  * @n1: The string containing the first number
- * @n2 - Second string
+ * @r: string
+ * @n2: - Second string
  * @r_index: the current index of the buffer
  *
  * Return: Always success
@@ -45,7 +46,8 @@ return (r + r_index + 1);
 /**
  * infinite_add - add the number stored on two strings
  * @n1: The string containing the first number
- * @n2 - Second string
+ * @n2: - Second string
+ * @r: string
  * @size_r: the current index of the buffer
  *
  * Return: Always success
