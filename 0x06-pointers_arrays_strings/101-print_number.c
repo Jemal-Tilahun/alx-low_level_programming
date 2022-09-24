@@ -14,7 +14,7 @@ unsigned int x;
 
 if (n < 0)
 {
-_putchar('_');
+_putchar('-');
 n *= -1;
 }
 x = n;
