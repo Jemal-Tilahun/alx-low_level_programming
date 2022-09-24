@@ -9,8 +9,8 @@ int *p;
 a[2] = 1024;
 p = &n;
 /*
- * - write your line of code here...
- * - Remember:
+ * write your line of code here...
+ * Remember:
  * - You are not allowed to use a
  * - You are not allowed to modify p
  * - only one statement
