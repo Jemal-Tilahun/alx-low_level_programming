@@ -14,7 +14,7 @@ while (haystack[a])
 {
 while (needle[b])
 {
-if (haystack[ a + b] != needle[b])
+if (haystack[a + b] != needle[b])
 {
 break;
 }
