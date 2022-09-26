@@ -15,10 +15,10 @@ int b, sum1 = 0, sum2 = 0;
 for (b = 0; b < size; b++)
 {
 
-	sum1 += a[(size + 1) * b]
-sum2 += a[(size - 1) * (b + 1)]
+sum1 += a[(size + 1) * b];
+sum2 += a[(size - 1) * (b + 1)];
 }
 
-ptintf("%d, %d\n", sum1, sum2);
+printf("%d, %d\n", sum1, sum2);
 
 }
