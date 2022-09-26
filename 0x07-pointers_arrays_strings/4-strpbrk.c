@@ -5,7 +5,7 @@
  * @s: source string
  * @accept: accepted character
  *
- * Return: the string since the first found accepted character
+ * Return: the string since the first found accepted
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -25,4 +25,5 @@ b++;
 a++;
 }
 return ('\0');
+}
 
