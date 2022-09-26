@@ -5,7 +5,7 @@
  * @haystack: the string to search
  * @needle: the string to finde
  *
- * return: char value
+ * Return: char value
  */
 char *_strstr(char *haystack, char *needle)
 {
