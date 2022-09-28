@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * factorial - calcukate the factorial 
+ * factorial - Calculate the factorial of a numbe
  * @n: the neber
  *
- * Return: 
+ * Return: Integer value
  */
 int factorial(int n)
 {
