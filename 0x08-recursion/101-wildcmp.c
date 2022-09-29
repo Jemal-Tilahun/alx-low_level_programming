@@ -52,14 +52,22 @@ if (*(str + str_len - postfix_len) == *postfix && *postfix != '\0')
 {                                                                             postfix++;
 return (postfix_match(str, postfix));                                         }                                                                             return (postfix);                                                             }
 
-/**                                                                            * wildcmp - compare two strings, considering wildcard characters
- * @s1: The first string                                                       * @s2: The second stting
- *                                                                             * Return: If the string can be considered
+/**
+ * wildcmp - compare two strings, considering wildcard characters
+ * @s1: The first string
+ * @s2: The second string
+ * Return: If the string can be considered
  */
-int wildcmp(char *s1, char *s2)                                               {                                                                             if (*s1 == '*')
+int wildcmp(char *s1, char *s2)
 {
-iterate_wild(&s2);                                                            s2 = postfix_match(s1, s2);
+if (*s1 == '*')
+{
+iterate_wild(&s2);
+s2 = postfix_match(s1, s2);
 }
-if (*s2 == '\0')                                                              return (1);
-if (*s1 != *s2)                                                               return (0);                                                                   return (wildcmp(++s1, ++s2));
+if (*s2 == '\0')
+return (1);
+if (*s1 != *s2)
+return (0);
+return (wildcmp(++s1, ++s2));
 }
