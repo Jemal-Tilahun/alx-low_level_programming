@@ -1,5 +1,6 @@
 #include "main.h"
-int strlen_no_wilds(char *str);                                               void iterate_wild(char **wildstr);
+int strlen_no_wilds(char *str);
+void iterate_wild(char **wildstr);
 char *postfix_match(char *str, char *postfix);
 int wildcmp(char *s1, char *s2);
 /**
@@ -36,22 +37,25 @@ iterate_wild(wildstr);
 }
 
 /**
- * postfix_match - checks if a string str matches the postfix of another strin
-g
+ * postfix_match - checks if a string str matches the postfix of
  * @str: The string to be matched
- * @postfix: The post fix                                                      *
  * Return: If str and postfix are identical...
  */
 char *postfix_match(char *str, char *postfix)
-{                                                                             int str_len = strlen_no_wilds(str) - 1;
+{
+int str_len = strlen_no_wilds(str) - 1;
 int postfix_len = strlen_no_wilds(postfix) - 1;
 
-if (*postfix == '*')                                                          iterate_wild(&postfix);
+if (*postfix == '*')
+iterate_wild(&postfix);
 
 if (*(str + str_len - postfix_len) == *postfix && *postfix != '\0')
-{                                                                             postfix++;
-return (postfix_match(str, postfix));                                         }                                                                             return (postfix);                                                             }
-
+{
+postfix++;
+return (postfix_match(str, postfix));
+}
+return (postfix);
+}
 /**
  * wildcmp - compare two strings, considering wildcard characters
  * @s1: The first string
