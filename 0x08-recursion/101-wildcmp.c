@@ -39,6 +39,7 @@ iterate_wild(wildstr);
 /**
  * postfix_match - checks if a string str matches the postfix of
  * @str: The string to be matched
+ * @postfix: Fix post
  * Return: If str and postfix are identical...
  */
 char *postfix_match(char *str, char *postfix)
