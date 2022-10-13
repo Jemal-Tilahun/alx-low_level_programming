@@ -71,7 +71,7 @@ void print_a_integer(char *separator, va_list args)
  */
 void print_a_float(char *separator, va_list args)
 {
-	print("%s%f", separator, va_arg(args, double));
+	printf("%s%f", separator, va_arg(args, double));
 }
 
 /**
